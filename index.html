@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ayush Arya Kashyap</title>
-<meta name="description" content="Ayush Arya Kashyap — CS student at IIIT Bangalore and visiting researcher at SUTD, working on LLM-guided fuzzing, AI security and agentic AI.">
+<meta name="description" content="Ayush Arya Kashyap builds agentic AI and works on AI security. Visiting researcher at SUTD, CS at IIIT Bangalore, ex-Microsoft and Trimble.">
 <meta property="og:title" content="Ayush Arya Kashyap">
 <meta property="og:description" content="Visiting researcher at SUTD working on LLM-guided fuzzing and AI security. CS at IIIT Bangalore. Ex-intern at Microsoft and Trimble.">
 <meta property="og:type" content="website">
@@ -21,11 +21,12 @@
 
   <aside class="rail">
     <a class="rail-name" href="#top">Ayush Arya Kashyap</a>
-    <p class="rail-role">Visiting researcher, SUTD<br>CS, IIIT Bangalore</p>
+    <p class="rail-role">AI security and agents<br>Visiting researcher, SUTD<br>CS, IIIT Bangalore</p>
     <nav class="rail-nav" aria-label="Sections">
       <a href="#now">Now</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#toolkit">AI toolkit</a>
       <a href="#research">Research</a>
       <a href="#recognition">Recognition</a>
       <a href="#beyond">Beyond code</a>
@@ -48,13 +49,14 @@
         <span class="fuzz" data-text="Kashyap">Kashyap</span>
       </h1>
       <p class="hero-lede">
-        I'm a computer science student at IIIT Bangalore, currently in Singapore as a visiting researcher at SUTD.
-        I work on getting language models to find things that shouldn't be there: bugs and vulnerabilities in software
-        and in machine-learning systems.
+        I build AI that does things, and work on keeping it safe. I'm a computer science student at IIIT Bangalore,
+        currently a visiting researcher at SUTD in Singapore, where I use language models to find bugs and vulnerabilities
+        in software and in machine-learning systems.
       </p>
       <p class="hero-sub">
-        Before this I built agentic AI tooling for network operations at Microsoft, shipped production AI apps at Trimble,
-        ran neuroimaging research at IIIT Bangalore, and won the SEBI National Securities Market Hackathon.
+        Before this I built an agentic AI system for network operations at Microsoft, shipped AI apps now in production at Trimble,
+        applied machine learning to brain imaging at IIIT Bangalore, and won the SEBI National Securities Market Hackathon
+        with an AI fraud detector.
       </p>
     </header>
 
@@ -208,52 +210,142 @@
 
     <section id="projects" class="section">
       <h2>Projects</h2>
+      <h3 class="group">AI security and agents</h3>
       <div class="projects">
-
         <article class="project">
-          <h3>InvestShield</h3>
-          <p class="project-meta">Winner, SEBI National Securities Market Hackathon 2025</p>
-          <p>A fraud-detection platform for scam investment content, fake advisor claims and pump announcements across Telegram, WhatsApp and the web. Trained on 50,000+ verified samples across 7 fraud categories with a soft-voting ensemble (Random Forest, Gradient Boosting, Logistic Regression) reaching 95%+ accuracy, served through a FastAPI and React app with sub-second responses.</p>
-          <p class="stack">Python, scikit-learn, FastAPI, React, Docker</p>
+          <h3>GraphSentinel</h3>
+          <p class="project-meta">2026</p>
+          <p>An AI security investigator that works over a knowledge graph of people, devices, services and alerts. A bounded LLM agent walks the graph through read-only tools (also exposed as an MCP server), a deterministic engine scores the risk, and every proposed response action needs a human to approve it. Comes with a React Flow dashboard and a measured evaluation on synthetic incidents.</p>
+          <p class="stack">LLM tool use, MCP, FalkorDB, FastAPI, React, TypeScript</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/GraphSentinel" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
-
+        <article class="project">
+          <h3>FeedbackFuzz</h3>
+          <p class="project-meta">Research prototype, 2026</p>
+          <p>Extends HLPFuzz (USENIX Security 2025), which uses an LLM to solve the constraints that block a fuzzer. FeedbackFuzz classifies each failure as a syntax, type or semantic error and feeds the model a structured template for that error type, cutting solving iterations by 27.9% across the test scenarios.</p>
+          <p class="stack">LLM-guided fuzzing, constraint solving, Python</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/FeedbackFuzz" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
         <article class="project">
           <h3>Rakshak</h3>
           <p class="project-meta">Microsoft, internal</p>
-          <p>An AI network change assurance agent for WAN operations. It pulls telemetry and configuration through custom MCP tools, checks a planned change against baselines and safety rules, and explains the risk in plain language before and after deployment.</p>
-          <p class="stack">LLMs, MCP, agentic workflows</p>
+          <p>An agentic network change assurance system for WAN operations. It pulls telemetry and configuration through custom MCP tools, checks a planned change against baselines and safety rules, and explains the risk in plain language before and after deployment.</p>
+          <p class="stack">LLM agents, MCP, reasoning pipelines</p>
         </article>
-
+        <article class="project">
+          <h3>Trust360</h3>
+          <p class="project-meta">Bank of Baroda Hackathon 2026</p>
+          <p>Continuous identity trust for banking: instead of trusting a session after login, every customer and employee gets a live trust score from an ML fraud model, insider-threat anomaly detection and device, location and behaviour signals. Low-risk users see no friction; risky sessions are stepped up, restricted or frozen.</p>
+          <p class="stack">ML fraud detection, anomaly detection, Next.js, TypeScript</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/bank-of-baroda-psb-hackathon" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
+        <article class="project">
+          <h3>SafeGuard AI</h3>
+          <p class="project-meta">AMD Slingshot, AI + Cybersecurity</p>
+          <p>A privacy-first phishing detector for students that runs ML models on-device to check links, emails and messages, then explains in plain words why something is dangerous. Ships as a web app and a browser extension.</p>
+          <p class="stack">On-device ML, NLP, Flask, React, browser extension</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/AMD-Slingshot" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
+        <article class="project">
+          <h3>InvestShield</h3>
+          <p class="project-meta">Winner, SEBI National Securities Market Hackathon 2025</p>
+          <p>Detects scam investment content, fake advisor claims and pump announcements across Telegram, WhatsApp and the web. Trained on 50,000+ verified samples across 7 fraud categories with a soft-voting ensemble reaching 95%+ accuracy, served through a FastAPI and React app with sub-second responses.</p>
+          <p class="stack">Python, scikit-learn, FastAPI, React, Docker</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/InvestShield" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
+      </div>
+      <h3 class="group">AI in production</h3>
+      <div class="projects">
         <article class="project">
           <h3>LedgerScan</h3>
           <p class="project-meta">Trimble, in production</p>
-          <p>Upload invoices and receipts, get structured data back. Used day to day by Trimble's accounts department, with GCP pipelines handling extraction and downstream processing.</p>
-          <p class="stack">LLMs, GCP, full stack</p>
+          <p>Upload invoices and receipts, get structured data back. AI extraction backed by GCP pipelines, used day to day by Trimble's accounts department.</p>
+          <p class="stack">LLMs, document AI, GCP, full stack</p>
         </article>
-
         <article class="project">
           <h3>Agent-powered API testing</h3>
           <p class="project-meta">Trimble</p>
           <p>An LLM agent that reads an API's schema, plans test cases, writes and runs Playwright scripts, and analyses the results, adapting to the domain of each application it tests.</p>
-          <p class="stack">LLMs, Playwright</p>
+          <p class="stack">LLM agents, Playwright</p>
         </article>
-
-        <article class="project">
-          <h3>UnUKoti Comm</h3>
-          <p class="project-meta">CinqueNetwork</p>
-          <p>A digital visiting-card app for individuals and businesses, with real-time video calling, screen sharing and chat over a custom WebRTC signalling server, deployed on AWS.</p>
-          <p class="stack">Kotlin, Node.js, MongoDB, Redis, WebRTC, AWS</p>
-        </article>
-
         <article class="project">
           <h3>Media Coverage Tracker</h3>
           <p class="project-meta">Trimble</p>
-          <p>Finds and classifies press coverage of Trimble automatically and produces Excel reports for the internal media team.</p>
+          <p>Finds Trimble's press coverage, classifies it with AI and produces Excel reports for the internal media team.</p>
           <p class="stack">LLMs, Python</p>
         </article>
-
+        <article class="project">
+          <h3>UnUKoti Comm</h3>
+          <p class="project-meta">CinqueNetwork</p>
+          <p>A digital visiting-card app with real-time video calling, screen sharing and chat over a custom WebRTC signalling server, deployed on AWS.</p>
+          <p class="stack">Kotlin, Node.js, MongoDB, Redis, WebRTC, AWS</p>
+        </article>
+      </div>
+      <h3 class="group">Applied AI and ML</h3>
+      <div class="projects">
+        <article class="project">
+          <h3>Grounded Q&amp;A for Julius Caesar</h3>
+          <p class="project-meta">Team project, NLP course</p>
+          <p>A hybrid RAG system that answers questions about the play only from retrieved passages, so every answer is traceable to the text. Semantic chunking, transformer embeddings in ChromaDB, two-stage retrieval with reranking, and grounded generation with Gemini.</p>
+          <p class="stack">RAG, ChromaDB, reranking, Gemini, FastAPI</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/Julius-Caesar-NLP" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
+        <article class="project">
+          <h3>AI-native news briefings</h3>
+          <p class="project-meta">ET Hackathon 2026</p>
+          <p>Turns business news into personalised decision briefs. A set of agents fetches stories, ranks them for the reader's role and goals with visible reasons, and writes takeaways and what to watch next.</p>
+          <p class="stack">Multi-agent LLM pipeline, React, TypeScript</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/ai-native-news-prototype" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
+        <article class="project">
+          <h3>Neusearch AI</h3>
+          <p class="project-meta">2025</p>
+          <p>A conversational shopping assistant for furniture that understands vague requests, asks clarifying questions and explains its picks, using vector search over scraped product data.</p>
+          <p class="stack">LLMs, semantic search, ChromaDB, FastAPI, React</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/Neusearch-AI" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
+        <article class="project">
+          <h3>SHL assessment recommender</h3>
+          <p class="project-meta">2025</p>
+          <p>Matches a plain-language job description to the right SHL assessments with a hybrid recommendation model, reaching 92% precision@5.</p>
+          <p class="stack">Recommender systems, NLP, Streamlit</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/shl-recommendation-engine" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
+        <article class="project">
+          <h3>Fair credit decisions</h3>
+          <p class="project-meta">Multi-objective ML course, 2026</p>
+          <p>Uses NSGA-II to find credit approval policies that balance profit, predictive accuracy and fairness across age groups, and shows the trade-offs on a Pareto front.</p>
+          <p class="stack">Multi-objective optimisation, scikit-learn</p>
+          <p class="project-link"><a href="https://github.com/ayusharyakashyap/moml-project" target="_blank" rel="noopener">Code on GitHub</a></p>
+        </article>
       </div>
       <p class="more">More code on <a href="https://github.com/ayusharyakashyap" target="_blank" rel="noopener">GitHub</a>.</p>
+    </section>
+
+    <section id="toolkit" class="section">
+      <h2>AI toolkit</h2>
+      <dl class="research">
+        <div>
+          <dt>Agents and tool use</dt>
+          <dd>LLM agents that plan and act through tools, MCP servers and clients, bounded tool loops, human approval steps, reasoning pipelines over logs and telemetry.</dd>
+        </div>
+        <div>
+          <dt>AI security</dt>
+          <dd>LLM-guided fuzzing, malicious model artifacts, fraud and phishing detection, anomaly detection, security investigation over knowledge graphs.</dd>
+        </div>
+        <div>
+          <dt>Retrieval and language</dt>
+          <dd>RAG with semantic chunking and reranking, vector databases (ChromaDB), document extraction, classification and summarisation.</dd>
+        </div>
+        <div>
+          <dt>Machine learning</dt>
+          <dd>Ensembles, gradient boosting, ElasticNet, feature selection (mRMR, ReliefF), GAMs, multi-objective optimisation, recommender systems.</dd>
+        </div>
+        <div>
+          <dt>Engineering</dt>
+          <dd>Python, TypeScript, Kotlin, FastAPI, React, Docker, AWS, GCP, Azure.</dd>
+        </div>
+      </dl>
     </section>
 
     <section id="research" class="section">
@@ -278,6 +370,7 @@
       <h2>Recognition</h2>
       <ul class="plain">
         <li><strong>Winner, SEBI National Securities Market Hackathon 2025</strong> for InvestShield, selected from 120+ teams nationally.</li>
+        <li>Also built AI projects at the Bank of Baroda Hackathon 2026 (Trust360), ET Hackathon 2026 (AI-native news) and AMD Slingshot (SafeGuard AI).</li>
         <li>Certifications: Fundamentals of Machine Learning; Fundamentals of Question Answering with the Language Service; HELM Program; Entrepreneurship.</li>
         <li>Aryabhatta National Maths Competition.</li>
       </ul>
