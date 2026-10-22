@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ayush Arya Kashyap</title>
-<meta name="description" content="Ayush Arya Kashyap builds agentic AI and works on AI security. Visiting researcher at SUTD, CS at IIIT Bangalore, ex-Microsoft and Trimble.">
+<meta name="description" content="Ayush Arya Kashyap. CS student at IIIT Bangalore and visiting researcher at SUTD, working on AI agents and AI security.">
 <meta property="og:title" content="Ayush Arya Kashyap">
 <meta property="og:description" content="Visiting researcher at SUTD working on LLM-guided fuzzing and AI security. CS at IIIT Bangalore. Ex-intern at Microsoft and Trimble.">
 <meta property="og:type" content="website">
@@ -21,12 +21,12 @@
 
   <aside class="rail">
     <a class="rail-name" href="#top">Ayush Arya Kashyap</a>
-    <p class="rail-role">AI security and agents<br>Visiting researcher, SUTD<br>CS, IIIT Bangalore</p>
+    <p class="rail-role">AI agents and AI security<br>Visiting researcher, SUTD<br>CS, IIIT Bangalore</p>
     <nav class="rail-nav" aria-label="Sections">
       <a href="#now">Now</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#toolkit">AI toolkit</a>
+      <a href="#toolkit">Skills</a>
       <a href="#research">Research</a>
       <a href="#recognition">Recognition</a>
       <a href="#beyond">Beyond code</a>
@@ -49,14 +49,14 @@
         <span class="fuzz" data-text="Kashyap">Kashyap</span>
       </h1>
       <p class="hero-lede">
-        I build AI that does things, and work on keeping it safe. I'm a computer science student at IIIT Bangalore,
-        currently a visiting researcher at SUTD in Singapore, where I use language models to find bugs and vulnerabilities
-        in software and in machine-learning systems.
+        I'm a CS student at IIIT Bangalore, and right now I'm in Singapore as a visiting researcher at SUTD.
+        I spend most of my time trying to get LLMs to find bugs and security holes in software and in
+        machine learning models.
       </p>
       <p class="hero-sub">
-        Before this I built an agentic AI system for network operations at Microsoft, shipped AI apps now in production at Trimble,
-        applied machine learning to brain imaging at IIIT Bangalore, and won the SEBI National Securities Market Hackathon
-        with an AI fraud detector.
+        Before this I interned at Microsoft, where I built an AI agent that checks network changes before they go live.
+        I've also built AI tools at Trimble that people there still use, worked on brain imaging research back at IIIT Bangalore,
+        and my team won the SEBI National Securities Market Hackathon with a fraud detection platform.
       </p>
     </header>
 
@@ -64,14 +64,15 @@
       <h2>What I'm working on now</h2>
       <div class="now">
         <p>
-          <strong>LLM-guided fuzzing of serialized ML models.</strong>
-          Model files like pickles can carry executable payloads. At SUTD I'm reproducing systems such as ShadowPickle,
-          PickleFuzzer and DynaHug/DynaOrg, building Docker-based baselines, and exploring how semantic-aware mutation,
-          constraint solving and LLM reasoning can push fuzzers toward deeper vulnerabilities in binary and serialized formats.
+          At SUTD I'm working on LLM-guided fuzzing for machine learning model files. A lot of models are shared as pickle
+          files, and a pickle can run code the moment you load it, which makes it a nice place to hide something malicious.
+          I've been reproducing tools like ShadowPickle, PickleFuzzer and DynaHug/DynaOrg to get baselines, and now I'm
+          trying to use LLMs to make the fuzzer smarter about what it mutates, so it finds the deeper bugs that normal fuzzers miss.
         </p>
         <p>
-          More broadly I'm drawn to AI that actually does things — agents that reason, use tools and act on other systems —
-          and to what goes wrong when you give models more autonomy. Fintech and fraud detection are my other recurring rabbit hole.
+          More generally, I like AI that actually does things. Not just a chatbot that answers you, but agents that can use tools,
+          make decisions and get work done. I'm just as interested in what goes wrong once you give models that much freedom.
+          Fintech and fraud detection are the other rabbit hole I keep falling into.
         </p>
       </div>
     </section>
@@ -81,61 +82,61 @@
       <ol class="timeline">
 
         <li class="job">
-          <p class="when">Sep 2026 – now</p>
+          <p class="when">Sep 2026 - now</p>
           <div class="what">
             <h3>Visiting Researcher <span class="at">Singapore University of Technology and Design</span></h3>
             <p class="where">Singapore</p>
             <ul>
-              <li>Researching LLM-guided fuzzing for AI supply-chain security: finding vulnerabilities in serialized ML model formats (such as Pickle) and malicious model artifacts shared through public model hubs.</li>
+              <li>Researching LLM-guided fuzzing for AI supply-chain security, looking for vulnerabilities in serialized ML model formats like Pickle and in malicious models shared on public model hubs.</li>
               <li>Reproduced and benchmarked ShadowPickle, PickleFuzzer and DynaHug/DynaOrg in Docker, establishing baselines for detecting, analysing and fuzzing malicious serialized models.</li>
-              <li>Designing and evaluating LLM-guided fuzzing techniques (semantic-aware mutation, LLM-assisted constraint solving, context construction, reasoning-based test generation) to reach program states that coverage-guided fuzzers miss.</li>
-              <li>Developing context-aware fuzzing pipelines that combine program and model-format semantics with LLM guidance to improve mutation quality and uncover deeper vulnerabilities.</li>
+              <li>Designing and testing LLM-guided fuzzing techniques like semantic-aware mutation, LLM-assisted constraint solving and reasoning-based test generation, to reach code that coverage-guided fuzzers usually miss.</li>
+              <li>Building fuzzing pipelines that give the LLM context about the program and the model format, so its mutations are better and it can find deeper bugs.</li>
               <li>Built reproducible benchmarks comparing fuzzing and model-security approaches on detection coverage, vulnerability discovery and efficiency.</li>
             </ul>
           </div>
         </li>
 
         <li class="job">
-          <p class="when">May – Jul 2026</p>
+          <p class="when">May - Jul 2026</p>
           <div class="what">
             <h3>Cloud Network Engineering Intern <span class="at">Microsoft</span></h3>
             <p class="where">Hyderabad</p>
             <ul>
-              <li>Led the build of Rakshak, an AI-driven network change assurance agent for WAN operations, architected from the ground up to flag risks before changes are deployed.</li>
+              <li>Led the build of Rakshak, an AI agent for WAN operations that checks network changes and flags risks before they are deployed. I designed it from scratch.</li>
               <li>Designed agentic workflows with LLMs and MCP tool orchestration for pre-change validation, risk assessment and post-change verification.</li>
-              <li>Built custom MCP tools for telemetry retrieval, network state analysis, anomaly detection and baseline comparison, plus deterministic safety checks and topology visualization.</li>
-              <li>Built reasoning pipelines that turn logs, telemetry and config changes into human-readable summaries engineers can act on.</li>
+              <li>Built custom MCP tools for pulling telemetry, analysing network state, spotting anomalies and comparing against baselines, along with rule-based safety checks and a topology view.</li>
+              <li>Built pipelines that read through logs, telemetry and config changes and write up a plain summary that engineers can act on.</li>
             </ul>
           </div>
         </li>
 
         <li class="job">
-          <p class="when">Jan – Jul 2026</p>
+          <p class="when">Jan - Jul 2026</p>
           <div class="what">
             <h3>Teaching Assistant <span class="at">IIIT Bangalore</span></h3>
             <p class="where">Bengaluru</p>
             <ul>
-              <li>TA for Visual Recognition (AIM 825); class representative for Technology, Regulation and Law (DHS 315).</li>
+              <li>TA for Visual Recognition (AIM 825), and class representative for Technology, Regulation and Law (DHS 315).</li>
             </ul>
           </div>
         </li>
 
         <li class="job">
-          <p class="when">Jan 2025 – May 2026</p>
+          <p class="when">Jan 2025 - May 2026</p>
           <div class="what">
             <h3>Research Intern <span class="at">E-Health Research Center, IIIT Bangalore</span></h3>
             <p class="where">Bengaluru</p>
             <ul>
               <li>Large-scale neuroimaging research on the cVEDA cohort (NIMHANS, 1,100+ participants), studying how brain structure, connectivity and white-matter microstructure relate to behaviour.</li>
               <li>Built unified multimodal datasets from structural, functional and diffusion MRI plus behavioural assessments (ACE-IQ, ASSIST, SDQ), with QC and age-residualization pipelines.</li>
-              <li>Reduced 10,000+ MRI-derived measurements to interpretable regional features; modelled phenotypes with ElasticNet, Random Forest, XGBoost and Gradient Boosting, using mRMR, ReliefF and ANOVA for biomarker selection.</li>
+              <li>Cut 10,000+ MRI measurements down to regional brain features that are actually interpretable, then predicted behavioural outcomes with ElasticNet, Random Forest, XGBoost and Gradient Boosting, using mRMR, ReliefF and ANOVA to pick biomarkers.</li>
               <li>Modelled non-linear neurodevelopmental trajectories with LinearGAM and GAMLSS, following brain-chart methodology.</li>
             </ul>
           </div>
         </li>
 
         <li class="job">
-          <p class="when">Jun – Aug 2025</p>
+          <p class="when">Jun - Aug 2025</p>
           <div class="what">
             <h3>Graduate Technical Intern <span class="at">Trimble Inc.</span></h3>
             <p class="where">Chennai</p>
@@ -143,26 +144,26 @@
               <li>Built LedgerScan, an AI-powered app for invoice and receipt extraction, now in active use by the accounts team.</li>
               <li>Built the Trimble Media Coverage Tracker for AI-based article parsing, classification and automated Excel reporting.</li>
               <li>Created an agent-powered API testing framework with LLMs and Playwright that plans, generates, runs and analyses schema-aware tests.</li>
-              <li>Implemented GCP pipelines for invoice processing and workflow orchestration; prepared SketchUp help-docs datasets for RAG.</li>
+              <li>Set up GCP pipelines for invoice processing, and scraped and cleaned SketchUp help docs into datasets for RAG.</li>
             </ul>
           </div>
         </li>
 
         <li class="job">
-          <p class="when">Jan – Dec 2025</p>
+          <p class="when">Jan - Dec 2025</p>
           <div class="what">
             <h3>Android Development Intern <span class="at">CinqueNetwork</span></h3>
             <p class="where">Bengaluru</p>
             <ul>
               <li>Built UnUKoti Comm, a full-stack Android app for dynamic digital visiting cards (Kotlin, Node.js/Express, MongoDB).</li>
-              <li>Wrote a WebRTC signalling server for video calls, screen sharing, chat and file transfer; debugged SDP negotiation issues.</li>
+              <li>Wrote a WebRTC signalling server for video calls, screen sharing, chat and file transfer, and fixed some painful SDP negotiation bugs along the way.</li>
               <li>Moved the backend to AWS with NGINX, Dockerised MongoDB and Redis, PM2 clustering, JWT auth and rate limiting.</li>
             </ul>
           </div>
         </li>
 
         <li class="job">
-          <p class="when">Jan – Apr 2025</p>
+          <p class="when">Jan - Apr 2025</p>
           <div class="what">
             <h3>Research Intern <span class="at">Mandonna Research Consultants</span></h3>
             <p class="where">Delhi</p>
@@ -173,7 +174,7 @@
         </li>
 
         <li class="job">
-          <p class="when">Dec 2024 – Jan 2025</p>
+          <p class="when">Dec 2024 - Jan 2025</p>
           <div class="what">
             <h3>IT Intern <span class="at">Escorts Kubota Finance</span></h3>
             <p class="where">Faridabad</p>
@@ -185,24 +186,24 @@
         </li>
 
         <li class="job">
-          <p class="when">May – Jul 2024</p>
+          <p class="when">May - Jul 2024</p>
           <div class="what">
             <h3>Data Engineering Intern <span class="at">Apollo Tyres</span></h3>
             <p class="where">Gurgaon</p>
             <ul>
               <li>Built event-driven AWS Lambda pipelines from S3 to Redshift for the R&amp;D team, transforming raw logs, CSV and Excel with Pandas.</li>
-              <li>Designed Redshift schemas and tables; handled pivoting, multi-index data, validation and batch inserts.</li>
+              <li>Designed the Redshift schemas and tables, and handled pivoting, multi-index data, validation and batch inserts.</li>
             </ul>
           </div>
         </li>
 
         <li class="job">
-          <p class="when">Jul – Aug 2023</p>
+          <p class="when">Jul - Aug 2023</p>
           <div class="what">
             <h3>Product Design Intern <span class="at">The Modern Data Company</span></h3>
             <p class="where">Indore</p>
             <ul>
-              <li>Redesigned the product and homepage with the product team: UX gap analysis, wireframes in Whimsical, high-fidelity prototypes in Figma.</li>
+              <li>Worked with the product team on a redesign of the product and homepage, from finding UX gaps to wireframes in Whimsical and prototypes in Figma.</li>
             </ul>
           </div>
         </li>
@@ -217,69 +218,69 @@
         <article class="project">
           <h3>GraphSentinel</h3>
           <p class="project-meta">2026</p>
-          <p>An AI security investigator that works over a knowledge graph of people, devices, services and alerts. A bounded LLM agent walks the graph through read-only tools (also exposed as an MCP server), a deterministic engine scores the risk, and every proposed response action needs a human to approve it. Comes with a React Flow dashboard and a measured evaluation on synthetic incidents.</p>
+          <p>An AI agent that investigates security alerts. Everything (people, devices, services, alerts) lives in a graph database, and the LLM explores it using a small set of read-only tools, which I also exposed as an MCP server. Risk scoring is rule-based rather than left to the model, and nothing gets acted on until a human approves it. I also built a dashboard for it and evaluated it on synthetic incidents.</p>
           <p class="stack">LLM tool use, MCP, FalkorDB, FastAPI, React, TypeScript</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/GraphSentinel" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
         <article class="project">
           <h3>FeedbackFuzz</h3>
           <p class="project-meta">Research prototype, 2026</p>
-          <p>Extends HLPFuzz (USENIX Security 2025), which uses an LLM to solve the constraints that block a fuzzer. FeedbackFuzz classifies each failure as a syntax, type or semantic error and feeds the model a structured template for that error type, cutting solving iterations by 27.9% across the test scenarios.</p>
+          <p>Built on top of HLPFuzz (USENIX Security 2025), which uses an LLM to get a fuzzer past tricky constraints. When the LLM's attempt fails, FeedbackFuzz works out what kind of error it was (syntax, type or semantic) and gives the model feedback written for that kind of error. In my tests it needed 27.9% fewer attempts.</p>
           <p class="stack">LLM-guided fuzzing, constraint solving, Python</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/FeedbackFuzz" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
         <article class="project">
           <h3>Rakshak</h3>
           <p class="project-meta">Microsoft, internal</p>
-          <p>An agentic network change assurance system for WAN operations. It pulls telemetry and configuration through custom MCP tools, checks a planned change against baselines and safety rules, and explains the risk in plain language before and after deployment.</p>
+          <p>The agent I built during my Microsoft internship. Before a network change goes out, it pulls telemetry and config through MCP tools, checks the change against baselines and safety rules, and explains the risk in plain English. It checks again after the change too.</p>
           <p class="stack">LLM agents, MCP, reasoning pipelines</p>
         </article>
         <article class="project">
           <h3>Trust360</h3>
           <p class="project-meta">Bank of Baroda Hackathon 2026</p>
-          <p>Continuous identity trust for banking: instead of trusting a session after login, every customer and employee gets a live trust score from an ML fraud model, insider-threat anomaly detection and device, location and behaviour signals. Low-risk users see no friction; risky sessions are stepped up, restricted or frozen.</p>
+          <p>Most banking apps stop checking who you are once you've logged in. Trust360 keeps a live trust score for every customer and employee, using an ML fraud model, insider-threat anomaly detection and signals like device and location. If the score is high you're left alone, and if it drops you get asked for more verification or the session gets locked.</p>
           <p class="stack">ML fraud detection, anomaly detection, Next.js, TypeScript</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/bank-of-baroda-psb-hackathon" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
         <article class="project">
           <h3>SafeGuard AI</h3>
           <p class="project-meta">AMD Slingshot, AI + Cybersecurity</p>
-          <p>A privacy-first phishing detector for students that runs ML models on-device to check links, emails and messages, then explains in plain words why something is dangerous. Ships as a web app and a browser extension.</p>
+          <p>A phishing checker for students. It runs ML models locally, so nothing you check leaves your device, and when it flags a link, email or message it tells you why in simple words. There's a web app and a browser extension.</p>
           <p class="stack">On-device ML, NLP, Flask, React, browser extension</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/AMD-Slingshot" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
         <article class="project">
           <h3>InvestShield</h3>
           <p class="project-meta">Winner, SEBI National Securities Market Hackathon 2025</p>
-          <p>Detects scam investment content, fake advisor claims and pump announcements across Telegram, WhatsApp and the web. Trained on 50,000+ verified samples across 7 fraud categories with a soft-voting ensemble reaching 95%+ accuracy, served through a FastAPI and React app with sub-second responses.</p>
+          <p>Spots investment scams, fake advisors and pump-and-dump posts on Telegram, WhatsApp and websites. We collected 50,000+ verified samples across 7 types of fraud and trained an ensemble model that gets over 95% accuracy. It runs as a FastAPI and React app and answers in under a second.</p>
           <p class="stack">Python, scikit-learn, FastAPI, React, Docker</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/InvestShield" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
       </div>
-      <h3 class="group">AI in production</h3>
+      <h3 class="group">AI at work</h3>
       <div class="projects">
         <article class="project">
           <h3>LedgerScan</h3>
           <p class="project-meta">Trimble, in production</p>
-          <p>Upload invoices and receipts, get structured data back. AI extraction backed by GCP pipelines, used day to day by Trimble's accounts department.</p>
+          <p>You upload invoices or receipts and it pulls out the data for you. Trimble's accounts team uses it every day.</p>
           <p class="stack">LLMs, document AI, GCP, full stack</p>
         </article>
         <article class="project">
           <h3>Agent-powered API testing</h3>
           <p class="project-meta">Trimble</p>
-          <p>An LLM agent that reads an API's schema, plans test cases, writes and runs Playwright scripts, and analyses the results, adapting to the domain of each application it tests.</p>
+          <p>Give it an API and it reads the schema, comes up with test cases, writes and runs Playwright tests, and then looks at what broke. It adjusts its tests to whatever the app is about.</p>
           <p class="stack">LLM agents, Playwright</p>
         </article>
         <article class="project">
           <h3>Media Coverage Tracker</h3>
           <p class="project-meta">Trimble</p>
-          <p>Finds Trimble's press coverage, classifies it with AI and produces Excel reports for the internal media team.</p>
+          <p>Finds articles that mention Trimble, sorts them with AI and puts together Excel reports for the media team.</p>
           <p class="stack">LLMs, Python</p>
         </article>
         <article class="project">
           <h3>UnUKoti Comm</h3>
           <p class="project-meta">CinqueNetwork</p>
-          <p>A digital visiting-card app with real-time video calling, screen sharing and chat over a custom WebRTC signalling server, deployed on AWS.</p>
+          <p>An Android app for digital visiting cards. I also added video calling, screen sharing and chat on top of a WebRTC server I wrote, and moved the whole backend to AWS.</p>
           <p class="stack">Kotlin, Node.js, MongoDB, Redis, WebRTC, AWS</p>
         </article>
       </div>
@@ -288,63 +289,63 @@
         <article class="project">
           <h3>Grounded Q&amp;A for Julius Caesar</h3>
           <p class="project-meta">Team project, NLP course</p>
-          <p>A hybrid RAG system that answers questions about the play only from retrieved passages, so every answer is traceable to the text. Semantic chunking, transformer embeddings in ChromaDB, two-stage retrieval with reranking, and grounded generation with Gemini.</p>
+          <p>A RAG system that answers questions about Julius Caesar using only passages from the play, so you can check every answer against the text. We chunked the play by meaning, stored embeddings in ChromaDB, reranked the results and used Gemini to write the answers.</p>
           <p class="stack">RAG, ChromaDB, reranking, Gemini, FastAPI</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/Julius-Caesar-NLP" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
         <article class="project">
           <h3>AI-native news briefings</h3>
           <p class="project-meta">ET Hackathon 2026</p>
-          <p>Turns business news into personalised decision briefs. A set of agents fetches stories, ranks them for the reader's role and goals with visible reasons, and writes takeaways and what to watch next.</p>
+          <p>Takes business news and turns it into short briefings for you specifically. A few agents fetch stories, rank them based on your role and goals (and show you why), and write up what it means for you and what to watch next.</p>
           <p class="stack">Multi-agent LLM pipeline, React, TypeScript</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/ai-native-news-prototype" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
         <article class="project">
           <h3>Neusearch AI</h3>
           <p class="project-meta">2025</p>
-          <p>A conversational shopping assistant for furniture that understands vague requests, asks clarifying questions and explains its picks, using vector search over scraped product data.</p>
+          <p>A chat assistant for finding furniture. You can ask for something vague like "furniture for a gym and meetings" and it asks follow-up questions, searches the products and tells you why it picked what it picked.</p>
           <p class="stack">LLMs, semantic search, ChromaDB, FastAPI, React</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/Neusearch-AI" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
         <article class="project">
           <h3>SHL assessment recommender</h3>
           <p class="project-meta">2025</p>
-          <p>Matches a plain-language job description to the right SHL assessments with a hybrid recommendation model, reaching 92% precision@5.</p>
+          <p>Paste in a job description and it suggests which SHL assessments to use. It gets 92% precision@5.</p>
           <p class="stack">Recommender systems, NLP, Streamlit</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/shl-recommendation-engine" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
         <article class="project">
           <h3>Fair credit decisions</h3>
           <p class="project-meta">Multi-objective ML course, 2026</p>
-          <p>Uses NSGA-II to find credit approval policies that balance profit, predictive accuracy and fairness across age groups, and shows the trade-offs on a Pareto front.</p>
+          <p>Lending is a trade-off between profit, accuracy and fairness. I used NSGA-II to find credit approval policies that balance the three and plotted the trade-offs on a Pareto front.</p>
           <p class="stack">Multi-objective optimisation, scikit-learn</p>
           <p class="project-link"><a href="https://github.com/ayusharyakashyap/moml-project" target="_blank" rel="noopener">Code on GitHub</a></p>
         </article>
       </div>
-      <p class="more">More code on <a href="https://github.com/ayusharyakashyap" target="_blank" rel="noopener">GitHub</a>.</p>
+      <p class="more">There's more on <a href="https://github.com/ayusharyakashyap" target="_blank" rel="noopener">GitHub</a>.</p>
     </section>
 
     <section id="toolkit" class="section">
-      <h2>AI toolkit</h2>
+      <h2>What I work with</h2>
       <dl class="research">
         <div>
           <dt>Agents and tool use</dt>
-          <dd>LLM agents that plan and act through tools, MCP servers and clients, bounded tool loops, human approval steps, reasoning pipelines over logs and telemetry.</dd>
+          <dd>LLM agents, tool calling, MCP servers and clients, and keeping humans in the loop for anything risky.</dd>
         </div>
         <div>
           <dt>AI security</dt>
-          <dd>LLM-guided fuzzing, malicious model artifacts, fraud and phishing detection, anomaly detection, security investigation over knowledge graphs.</dd>
+          <dd>LLM-guided fuzzing, malicious model files, fraud and phishing detection, and anomaly detection.</dd>
         </div>
         <div>
-          <dt>Retrieval and language</dt>
-          <dd>RAG with semantic chunking and reranking, vector databases (ChromaDB), document extraction, classification and summarisation.</dd>
+          <dt>RAG and NLP</dt>
+          <dd>Retrieval pipelines with reranking, ChromaDB, and pulling data out of documents.</dd>
         </div>
         <div>
           <dt>Machine learning</dt>
-          <dd>Ensembles, gradient boosting, ElasticNet, feature selection (mRMR, ReliefF), GAMs, multi-objective optimisation, recommender systems.</dd>
+          <dd>scikit-learn, XGBoost, feature selection, GAMs, recommenders and multi-objective optimisation.</dd>
         </div>
         <div>
-          <dt>Engineering</dt>
+          <dt>Building things</dt>
           <dd>Python, TypeScript, Kotlin, FastAPI, React, Docker, AWS, GCP, Azure.</dd>
         </div>
       </dl>
@@ -355,15 +356,15 @@
       <dl class="research">
         <div>
           <dt>AI security and fuzzing</dt>
-          <dd>SUTD, 2026 to present. LLM-guided fuzzing for AI supply-chain security: serialized model formats and malicious model artifacts on public model hubs.</dd>
+          <dd>SUTD, 2026 to now. Using LLMs to fuzz ML model files and catch malicious models before someone loads them.</dd>
         </div>
         <div>
           <dt>Population neuroimaging</dt>
-          <dd>E-Health Research Center, IIIT Bangalore, 2025–26. Shared and phenotype-specific neural signatures of adversity, substance use and behaviour in the cVEDA cohort.</dd>
+          <dd>E-Health Research Center, IIIT Bangalore, 2025 to 2026. Looking for patterns in brain scans linked to childhood adversity, substance use and behaviour, using data from the cVEDA study.</dd>
         </div>
         <div>
           <dt>Military mental health</dt>
-          <dd>Mandonna Research Consultants, 2025. Co-authored paper on militarization, masculinity and mental health in the Indian Armed Forces.</dd>
+          <dd>Mandonna Research Consultants, 2025. Co-wrote a paper on masculinity and mental health in the Indian Armed Forces.</dd>
         </div>
       </dl>
     </section>
@@ -371,39 +372,39 @@
     <section id="recognition" class="section">
       <h2>Recognition</h2>
       <ul class="plain">
-        <li><strong>Winner, SEBI National Securities Market Hackathon 2025</strong> for InvestShield, selected from 120+ teams nationally.</li>
-        <li>Also built AI projects at the Bank of Baroda Hackathon 2026 (Trust360), ET Hackathon 2026 (AI-native news) and AMD Slingshot (SafeGuard AI).</li>
-        <li>Certifications: Fundamentals of Machine Learning; Fundamentals of Question Answering with the Language Service; HELM Program; Entrepreneurship.</li>
-        <li>Aryabhatta National Maths Competition.</li>
+        <li><strong>Won the SEBI National Securities Market Hackathon 2025</strong> with InvestShield, out of 120+ teams from across India.</li>
+        <li>Also took part in the Bank of Baroda Hackathon 2026 with Trust360, the ET Hackathon 2026 with the AI news project, and AMD Slingshot with SafeGuard AI.</li>
+        <li>Certifications in Fundamentals of Machine Learning, Fundamentals of Question Answering with the Language Service, the HELM Program and Entrepreneurship.</li>
+        <li>Took part in the Aryabhatta National Maths Competition.</li>
       </ul>
     </section>
 
     <section id="beyond" class="section">
       <h2>Beyond code</h2>
       <ul class="beyond">
-        <li><span class="b-role">Freelance AI creator</span><span class="b-when">Jan – Apr 2026</span><span class="b-what">Built an AI influencer for Indian and American audiences.</span></li>
-        <li><span class="b-role">Fundraising Intern, FHLE</span><span class="b-when">Dec 2024 – now</span><span class="b-what">Raised ₹50,000+ for health and learning programmes.</span></li>
-        <li><span class="b-role">Content Team Lead, Anubhava</span><span class="b-when">2023 – 2025</span><span class="b-what">Interviewed students, alumni and faculty for IIITB's stories platform on Medium and YouTube.</span></li>
-        <li><span class="b-role">Marketing Intern, Youth India Foundation</span><span class="b-when">2024</span><span class="b-what">Ran social campaigns on sustainable entrepreneurship; offered the role of President.</span></li>
-        <li><span class="b-role">Editorial Lead, Zense</span><span class="b-when">2023 – 2024</span><span class="b-what">Led editorial design for IIITB's software developers' club.</span></li>
-        <li><span class="b-role">Core member, Chhayachitra</span><span class="b-when">2023 – 2024</span><span class="b-what">Photographed fests, symposiums and campus life for IIITB's media club.</span></li>
-        <li><span class="b-role">Core member, Sports Committee</span><span class="b-when">2023 – 2024</span><span class="b-what">Organised intra- and inter-college tournaments.</span></li>
+        <li><span class="b-role">Freelance AI creator</span><span class="b-when">Jan - Apr 2026</span><span class="b-what">Built an AI influencer for Indian and American audiences.</span></li>
+        <li><span class="b-role">Fundraising Intern, FHLE</span><span class="b-when">Dec 2024 - now</span><span class="b-what">Raised ₹50,000+ for health and learning programmes.</span></li>
+        <li><span class="b-role">Content Team Lead, Anubhava</span><span class="b-when">2023 - 2025</span><span class="b-what">Interviewed students, alumni and faculty about their journeys and published the stories on Medium and YouTube.</span></li>
+        <li><span class="b-role">Marketing Intern, Youth India Foundation</span><span class="b-when">2024</span><span class="b-what">Ran social media campaigns on sustainable entrepreneurship, and was offered the role of President.</span></li>
+        <li><span class="b-role">Editorial Lead, Zense</span><span class="b-when">2023 - 2024</span><span class="b-what">Led editorial design for IIITB's software developers' club.</span></li>
+        <li><span class="b-role">Core member, Chhayachitra</span><span class="b-when">2023 - 2024</span><span class="b-what">Photographed fests, symposiums and campus life for IIITB's media club.</span></li>
+        <li><span class="b-role">Core member, Sports Committee</span><span class="b-when">2023 - 2024</span><span class="b-what">Organised intra- and inter-college tournaments.</span></li>
         <li><span class="b-role">Campus Ambassador, KGEN</span><span class="b-when">2023</span><span class="b-what">Hosted Web3 gaming events and grew the campus player community.</span></li>
       </ul>
-      <p class="aside">Outside all this: travelling, new cities, good food, and reading about people who built interesting companies.</p>
+      <p class="aside">Outside of all this, I like travelling, exploring new cities, finding good food and reading about people who built interesting companies.</p>
     </section>
 
     <section id="education" class="section">
       <h2>Education</h2>
       <ul class="plain">
-        <li><strong>International Institute of Information Technology, Bangalore</strong><br>Integrated BTech + MTech, Computer Science and Engineering, 2022 – 2027</li>
+        <li><strong>International Institute of Information Technology, Bangalore</strong><br>Integrated BTech + MTech, Computer Science and Engineering, 2022 - 2027</li>
         <li><strong>Suncity School, Gurgaon</strong><br>High school, PCM with Mass Media Studies, 2022</li>
       </ul>
     </section>
 
     <section id="contact" class="section contact">
       <h2>Say hi</h2>
-      <p>If you're working on something interesting, have a rabbit hole I should go down, or want to talk about AI, security, startups or finance, I'd like to hear from you.</p>
+      <p>If you're working on something interesting, have a rabbit hole I should go down, or just want to talk about AI, security, startups or finance, say hi :)</p>
       <p class="contact-mail"><a href="mailto:ayusharyakashyap7@gmail.com">ayusharyakashyap7@gmail.com</a></p>
       <ul class="contact-links">
         <li><a href="https://www.linkedin.com/in/ayush-arya-kashyap/" target="_blank" rel="noopener">LinkedIn</a></li>
